@@ -1,0 +1,12 @@
+Value apname (\S+)
+Value slots (\d+) 
+Value apmodel (\S+) 
+Value ethernetmac (\S+) 
+Value location (\w*) 
+Value country (\w*) 
+Value ipaddress (\S+) 
+Value clients (\d+)
+Value DSE Location (.*) 
+
+Start 
+  ^${apname},^${slots}", ^${apmodel}",^${ethernetmac},^${location},^${country},^${ipaddress},^${clients},^${DSE Location}-> Record
